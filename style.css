@@ -105,6 +105,7 @@ img {
 }
 
 main {
+    max-width: 1200px;
     position: relative;
     padding-top: 2rem;
     display: grid;
