@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor0: #4000EB;
+    --cor1: #4B20C0;
+    --cor2: #4C3296;
+    --cor3: #44366B;
+    --cor4: #312B41;
+    --cor5: #2D2B33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.name {
+    color: var(--cor1);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.links > ul > li > a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: white;
+
+}
+
+.links > ul > li > a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor0);
+    transition: all 0.3s ease;
+}
+
+.links > ul > li > a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--cor0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--cor2);
+}
+
+img {
+    width: 70%;
+    display: flex;
+    border-radius: 100%;
+    margin-left: 35%;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+main {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+main > section > h4 {
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+main > section > h1 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+#typing-text {
+    margin-bottom: -1rem;
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+main > section > h1 > span.nome {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+} 
+
+main > section > p {
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+main > picture.img {
+    position: relative;
+}
+
+
+header > picture.img > img {
+    max-width: 600px;
+    margin: auto;
+}
+
