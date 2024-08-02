@@ -30,6 +30,12 @@ body {
     font-size: 1.25em;
 }
 
+@media (max-width: 700px) {
+    .name {
+        display: none;
+    }
+}
+
 a {
     text-decoration: none;
 }
@@ -87,10 +93,29 @@ nav {
     background-color: var(--cor2);
 }
 
+@media (max-width: 650px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
+
 main > img {
     width: 70%;
     margin-left: 20%;
     display: flex;
+}
+
+@media (max-width: 900px) {
+    main > img {
+        width: 0%;
+    }
 }
 
 .conteiner {
@@ -117,7 +142,7 @@ main {
 }
 
 main > section > h4 {
-    min-width: 600px;
+    width: 400px;
     margin-bottom: 1rem;
     color: #ccc;
     font-size: 1rem;
@@ -134,16 +159,23 @@ main > section > h1 {
 
 #typing-text {
     margin-bottom: -1rem;
-    border-right: 2px solid #000;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
     animation: blink 0.75s step-end infinite;
 }
 
-@keyframes blink {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
+
+@media (max-width: 768px) {
+    #typing-text {
+        white-space: pre-wrap;
+    }
+
+    main > section > h1 {
+        max-width: 400px;
+        width: 100%;
+        word-wrap: break-word;
+    }
 }
 
 main > section > h1 > span.nome {
@@ -156,14 +188,10 @@ main > section > p {
     color: #ccc;
 }
 
-main > picture.img {
-    position: relative;
-}
-
-
-header > picture.img > img {
-    max-width: 600px;
-    margin: auto;
+@media (max-width: 600px) {
+    main > section > p {
+        width: 400px;
+    }
 }
 
 h2.page-title {
@@ -333,7 +361,6 @@ footer .logo{
 footer .column .logo > img{
     max-width: 300px;
     margin-bottom: 2rem;
-    margin-left: 2rem;
 }
 
 footer .column p{
