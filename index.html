@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>José Otávio | Portifólio</title>
 </head>
 <body>
@@ -13,13 +14,13 @@
             <div class="name"><h1>José.</h1></div>
             <div class="links">
                 <ul class="nav-links">
-                    <li><a href="#">Bem-vindo</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#content">Bem-vindo</a></li>
+                    <li><a href="#sobremim">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
-            <button class="btn">Me contrate</button>
+            <a target="_blank" href="https://wa.me/5517996804466?text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento!"><button class="btn">Me contrate</button></a>
         </nav>
     </header>
 
@@ -27,21 +28,84 @@
         <section class="content">
             <span class="blur"></span>
             <span class="blur"></span>
-            <h4>Bem-vindo ao meu portifólio pessoal</h4>
+            <h4 id="content">Bem-vindo ao meu portifólio pessoal</h4>
             <h1>Hi, I'm <span class="nome">José</span>, <br> <span id="typing-text"></span></h1> 
             <p>futuro engenheiro de computação pela USP com habilidades em desenvolvimento web, análise de dados, inteligência artificial e desenvolvimento de softwares.</p>
-            <button class="btn">Saber mais</button>
+            <a href="#sobremim"><button class="btn">Saber mais</button></a>
         </section>
         <picture class="img">
-            <source media="(min-width: 1200px)" srcset="imgs/joseotavio.png" alt="Foto do autor">
+            <source media="(min-width: 1100px)" srcset="imgs/joseotavio.png" alt="Foto de um programador">
             <img src="" alt="">
 
         </picture>
     </main>
 
     <section class="conteiner">
-        <h2 class="page-title">PROJETOS</h2>
+        <h2 class="page-title" id="sobremim">SOBRE</h2>
+        <div class="sobremim">
+            <h4>Prazer, sou José Otávio</h4>
+            <p>Meu nome é José e sou estudante da Universidade de São Paulo no curso de Engenharia de Computação. Participo de diversas atividades extracurriculares para aprimorar minhas habilidades de programação. Realizei projetos desafiadores que podem ser encontrados no decorrer deste portifólio.
+            Vindo de uma escola pública, me esforcei muito para chegar onde estou, conciliando trabalho e estudo desde os 15 anos. Atualmente, busco continuar aprendendo novas linguagens de programação e aprimorar aquelas que já domino.
+            </p>
+            <a target="_blank" href="https://github.com/JoseOtavioJunqueira/JoseOtavioJunqueira">Conheça meu repositório público no GitHub <span>&#x27A1;</span></a>
+        </div>
     </section>
+
+    <section class="conteiner">
+        <h2 class="page-title" id="projetos">PROJETOS</h2>
+        <div class="projetos">
+            <div class="card">
+                <span>&#x1F393;</span>
+                <h4>Sistema de presença</h4>
+                <p>O projeto lê o código de barras da carteirinha do estudante e atribui presença a ele automaticamente em uma planilha do Google Sheets.</p>
+                <a target="_blank" href="https://github.com/JoseOtavioJunqueira/SistemaDePresenca">Saiba mais &#x27A1;</a>
+            </div>
+            <div class="card">
+                <span>&#x1F4B8;</span>
+                <h4>Gerador automático de holerite</h4>
+                <p>O projeto analisa uma planilha gerada automaticamente que contém algumas informações de um funcionário e retorna seu holerite em menos de 10 segundos.</p>
+                <a target="_blank" href="https://github.com/JoseOtavioJunqueira/GeradorHolerite">Saiba mais &#x27A1;</a>
+            </div>
+            <div class="card">
+                <span>&#x1F4C5;</span>
+                <h4>Gerarador de QRCode para eventos</h4>
+                <p>Este projeto recebe do usuário uma planilha do Google Sheets e analisa se foi confirmado o pagamento, gerando assim um QRCODE que será usado para a entrada no evento.</p>
+                <a target="_blank" href="https://github.com/JoseOtavioJunqueira/QRCODEGenerator">Saiba mais &#x27A1;</a>
+            </div>
+            <div class="card">
+                <span>&#x1F426;</span>
+                <h4>FlappyBird</h4>
+                <p>Este projeto possui intuito educativo para lecionar sobre o Python Orientado a Objetos. O jogo foi programado com intuito de recriar o clássico FlappyBird.</p>
+                <a target="_blank" href="https://github.com/JoseOtavioJunqueira/FlappyBird">Saiba mais &#x27A1;</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="conteiner">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <h2 class="page-title" id="contato">CONTATO</h2>
+        <div class="column">
+            <div class="logo">
+                <img src="imgs/pcboy.png" alt="Garoto Programando">
+            </div>
+            <p>Entre em contato comigo</p>
+            <div class="socials">
+                <a target="_blank" href="https://github.com/JoseOtavioJunqueira/JoseOtavioJunqueira"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://instagram.com/joseota_eu"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/jos%C3%A9-ot%C3%A1vio-junqueira-ramos-670288240/"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:joseotavio.jr1104@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="tks">
+        <h4>Obrigado por visitar meu portifólio online!</h4>
+    </div>
+
+    <div class="copyright">
+        Copyright &copy; 2024 José Otávio Junqueira Ramos. All Rights Reserved.
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -17,6 +17,7 @@
     outline: none;
     border: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
 
 .name {
     color: var(--cor1);
+    font-size: 1.25em;
 }
 
 a {
@@ -85,11 +87,10 @@ nav {
     background-color: var(--cor2);
 }
 
-img {
+main > img {
     width: 70%;
+    margin-left: 20%;
     display: flex;
-    border-radius: 100%;
-    margin-left: 35%;
 }
 
 .conteiner {
@@ -165,3 +166,200 @@ header > picture.img > img {
     margin: auto;
 }
 
+h2.page-title {
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.sobremim {
+    background-color: var(--cor4);
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.sobremim:hover {
+    background-color: var(--cor3);
+    border-color: white;
+}
+
+.sobremim > p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.sobremim > a {
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.sobremim >a:hover {
+    color: var(--cor0);
+}
+
+.sobremim > h4 {
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.projetos {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.projetos > .card {
+    background-color: var(--cor4);
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.projetos > .card:hover {
+    background-color: var(--cor3);
+    border-color: white;
+}
+
+.projetos > .card > span {
+    display: inline-block;
+    background-color: var(--cor0);
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.projetos > .card > h4 {
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.projetos > .card > p {
+    color: #ccc;    margin-bottom: 1rem;
+}
+
+.projetos > .card > a {
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.projetos > .card > a:hover {
+    color: var(--cor0);
+}
+
+.contato {
+    background-color: var(--cor4);
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.contato:hover {
+    background-color: var(--cor3);
+    border-color: white;
+}
+
+.contato a{
+    margin-right: 10px;
+}
+
+.contato > h4 {
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contato img{
+    vertical-align: middle;
+    width: 3%;
+}
+
+
+.column {
+    background-color: var(--cor4);
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    padding-bottom: 3rem;
+}
+
+.column:hover {
+    background-color: var(--cor3);
+    border-color: white;
+}
+
+footer .column p{
+    text-align: center;
+}
+
+footer .logo{
+    text-align: center;
+}
+
+footer .column .logo > img{
+    max-width: 300px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+footer .column p{
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover {
+    color: white;
+    background-color: var(--cor0);
+    border-color: var(--cor0);
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+.tks {
+    color: white;
+    font-size: 1.25rem;
+    margin: 0 auto 4rem auto;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 455px;
+}
