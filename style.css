@@ -166,7 +166,7 @@ main > section > h1 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #typing-text {
         white-space: pre-wrap;
     }
@@ -190,7 +190,7 @@ main > section > p {
 
 @media (max-width: 600px) {
     main > section > p {
-        width: 400px;
+        width: 350px;
     }
 }
 
