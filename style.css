@@ -169,11 +169,7 @@ main > section > h1 {
 @media (max-width: 600px) {
     #typing-text {
         white-space: pre-wrap;
-    }
-
-    main > section > h1 {
-        max-width: 290px;
-        width: 100%;
+        width: 73%;
         word-wrap: break-word;
     }
 }
@@ -190,7 +186,7 @@ main > section > p {
 
 @media (max-width: 600px) {
     main > section > p {
-        width: 215px;
+        width: 230px;
     }
 }
 
