@@ -62,7 +62,6 @@ nav {
     position: relative;
     padding-bottom: 0.75rem;
     color: white;
-    white-space: nowrap;
 }
 
 .links > ul > li > a::after {
