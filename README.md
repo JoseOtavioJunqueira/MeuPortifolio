@@ -1,4 +1,4 @@
-# Meu Portifóliio
+# Meu Portifólio
 O meu portifólio foi criado com objetivo de mostrar minhas habilidades em desenvolvimento Front-End a recrutadores que possam se interessar. 
 
 ## Funcionalidades
