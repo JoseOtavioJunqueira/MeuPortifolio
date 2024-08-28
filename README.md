@@ -11,9 +11,8 @@ O meu portifólio foi criado com objetivo de mostrar minhas habilidades em desen
 
 ## Como Acessar
 Acesse o site em: 
-```bash
-https://joseotaviojunqueira.github.io/MeuPortifolio/
-```
+<https://joseotaviojunqueira.github.io/MeuPortifolio/>
+
 
 ## Estrutura do Projeto
 - **index.html**: Código principal do código HTML.
